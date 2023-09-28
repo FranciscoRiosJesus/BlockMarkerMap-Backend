@@ -137,6 +137,9 @@ app.get('/', (req, res) => {
     .then(result => {
       res.json(result)
     })
+    .catch(err => {
+      console.error(err)
+    })
 })
 
 app.put('/:id', async (req, res) => {
